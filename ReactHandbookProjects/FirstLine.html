@@ -5,6 +5,14 @@
         <title>Loading React Directly in Web Page</title>
     </head>
     <body>
+        <h1>Hi!</h1>
+        
+        <p>Nice to meet you</p>
+        
+        <p>And this is my friend React:</p>
+        
+        <div  id="root"></div>
+
     <!-- Adding React and React DOM -->
         <script
       src="https://cdnjs.cloudflare.com/ajax/libs/react/16.7.0-alpha.2/umd/react.development.js"
@@ -16,9 +24,13 @@
     ></script>
     <!-- Add Javascript Files Here. -->
     <!-- In this case I'm using JS inline -->
-    <script>
+    <script type="text/babel">
         //my app
+        const Button = () => {
+            return <button>Click Me!</button>
+        }
+        ReactDOM.render(<Button />, document.getElementById('root'))
     </script>
-    
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
     </body>
 </html>
