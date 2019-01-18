@@ -18,7 +18,7 @@ export default class App extends Component {
 
     const formData = new FormData()
 
-    files.forEach((file, i)) => {
+    files.forEach((file, i) => {
       formData.append(i, file)
     })
 
